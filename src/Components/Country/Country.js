@@ -17,7 +17,7 @@ const Country = (props) => {
       <h3>Name: {name}</h3>
       <p>Capital: {capital}</p>
       <p>Alpha2Code: {alpha2Code}</p>
-      <Link to={`/country/name/${name}`}>
+      <Link to={`/country/${name}`}>
         <button>Details of {name}</button>
       </Link>
     </div>

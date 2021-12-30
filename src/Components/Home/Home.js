@@ -4,7 +4,7 @@ import Country from "../Country/Country";
 const Home = () => {
   const [countries, setCountries] = useState([]);
   useEffect(() => {
-    fetch("https://restcountries.eu/rest/v2/all")
+    fetch("https://jsonplaceholder.typicode.com/users")
       .then((res) => res.json())
       .then((data) => setCountries(data));
   }, []);
